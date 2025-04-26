@@ -182,7 +182,7 @@ def _insert_tweets(connection,input_tweets):
         if tweet['user']['url'] is None:
             url = None
         else:
-            url = get_id_urls(tweet['user']['url'])
+            url = tweet['user']['url']
 
         users.append({
             'id_users':tweet['user']['id'],
