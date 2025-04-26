@@ -37,7 +37,6 @@ def remove_nulls(s):
     else:
         return s.replace('\x00','\\x00')
 
-
 def batch(iterable, n=1):
     '''
     Group an iterable into batches of size n.
@@ -54,7 +53,6 @@ def batch(iterable, n=1):
     l = len(iterable)
     for ndx in range(0, l, n):
         yield iterable[ndx:min(ndx + n, l)]
-
 
 def _bulk_insert_sql(table, rows):
     '''
